@@ -18,6 +18,7 @@ def generateFibonacciSequence():
 		file.write("FibSeq of {} is {}".format(str(fibNumber) ,str(mymath.fibFunction(fibNumber)))) 
 		file.close()
 		listFiboGenerated[str(fibNumber)] = fileName
+		Screen().input("==Enter to return to the main menu==")
 	except ValueError:
 		print("That's not an int!")
    		print("No.. input string is not an Integer. It's a string") 
@@ -26,6 +27,7 @@ def listPrevFunctions():
 	print "This are the generated files on this session"
 	for ref in listFiboGenerated:
   		print(listFiboGenerated[ref])
+	Screen().input("==Enter to return to the main menu==")
 
 
 # define the program description
